@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="refresh" content="5">   
+<head>
+    <meta charset="UTF-8">
+    <h1>
+    <font color="white", size = 10> 
+        <div style="float: right"><img src= "{{ user_image }}" alt = "User Image" width = "100" /></div>
+        <div class="strokeme", style="float: left; font-size: 100px;">{{time}}</div>
+        <div style="clear: left;"/>
+    </font>
+    <font color="white", size= 10> 
+        <div class="strokeme", style="float: left">{{date}}</div>
+        <div class="strokeme", style="float: right; font-size: 50px;">{{temp}}</div>
+        <div style="clear: left;"/>
+    </font>
+    </h1>
+    <title>SmartDisplay</title>
+</head>
+<body>
+<font color="white", size= 15>  
+<pre>
+    <div class="bottom", style="float: center; font-size: 40px;">Top Story: {{headline}}</div>
+    <div style="clear: left;"/>
+    <div class="strokeme", style="float: left">Billboard Top 10:</div>
+    <div class="strokeme", style="float: left">{{music}}</div>
+    <div style="clear: left;"/>
+</pre>
+</font> 
+</body>
+<style>
+    body{
+        background-size: cover;
+        background: no-repeat center center fixed;
+        background-image: url({{bgi}});
+        background-color: white;
+    }
+    .strokeme {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .bottom {
+        position: fixed;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        bottom: 0;
+}
+</style>
+</html>
